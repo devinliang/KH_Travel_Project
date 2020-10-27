@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jquery mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Syne+Tactile&display=swap" rel="stylesheet">
+
+    <style>
+        
+        #home img {
+            max-width: 100%;
+        }
+
+        .ui-body-c, .ui-header {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .ui-footer {
+            font-family: 'Syne Tactile', cursive;
+        }
+
+
+        .video-wrapper{
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <title>高雄旅遊</title>
+</head>
+<body>
+
+    <!-- 首頁 -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>高雄旅遊</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>高雄旅遊</h1>
+            <img src="https://picsum.photos/1024/600" alt="">
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page01">
+                    <img src="https://picsum.photos/300" alt="">
+                    <h2>歷史地理</h2>
+                    <p>高雄的歷史.....地理......</p>
+                    
+                </a></li>
+
+                <li><a href="#page02">
+                    <img src="https://picsum.photos/300" alt="">
+                    <h2>特色景點</h2>
+                    <p>高雄的景點....... .....</p>
+                    
+                </a></li>
+                <li><a href="#page03">在地美食</a></li>
+                <li><a href="#page04">交通資訊</a></li>
+                <li><a href="#about">關於我們</a></li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Devin</h4>
+        </div>
+    </div><!-- 首頁 -->
+
+    <!-- 歷史地理 -->
+    <div data-role="page" id="page01">
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <h1>高雄旅遊</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>歷史地理</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Devin</h4>
+        </div>
+    </div><!-- 歷史地理 -->
+
+    <!-- 特色景點 -->
+    <div data-role="page" id="page02">
+        <div data-role="header">
+            <h1>高雄旅遊</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>特色景點</p>
+            <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EMa448Yoqsc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Devin</h4>
+        </div>
+    </div><!-- 特色景點 -->
+
+    <!-- 在地美食 -->
+    <div data-role="page" id="page03">
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <h1>高雄旅遊</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>在地美食</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Devin</h4>
+        </div>
+    </div><!-- 在地美食 -->
+
+    <!-- 交通資訊 -->
+    <div data-role="page" id="page04">
+        <div data-role="header">
+            <h1>高雄旅遊</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>交通資訊</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Devin</h4>
+        </div>
+    </div><!-- 交通資訊 -->
+
+    <!-- 關於我們 -->
+    <div data-role="page" id="about">
+        <div data-role="header">
+            <h1>高雄旅遊</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>關於我們</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Devin</h4>
+        </div>
+    </div><!-- 關於我們 -->
+
+
+</body>
+</html>
